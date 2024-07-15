@@ -64,6 +64,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   /* pointer-events: none; */
 }
 
