@@ -127,3 +127,24 @@ backward.addEventListener("click", function(){
         audio.pause()
     }
 })
+
+audio.addEventListener("ended", function(){
+  if(selectedSong < arr.length - 1){
+      selectedSong++
+      play.innerHTML = `<i class="fa-solid fa-circle-pause"></i>`
+      mainFunction()
+      audio.play()
+  } else{
+      forward.style.opacity = 0.3;
+      audio.pause()
+  }
+})
+// function playNextSong() {
+//   selectedSong = (selectedSong + 1) % arr.length;
+//   audio.src = arr[selectedSong].url;
+//   audio.load();
+//   audio.play();
+//   mainFunction();
+// }
+
+// audio.addEventListener('ended', playNextSong);
