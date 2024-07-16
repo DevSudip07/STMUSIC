@@ -54,6 +54,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.music-player h3:hover i {
+  cursor: pointer;
+  color: rgb(220, 220, 220);
+}
+
 #play {
   font-size: 25px;
 }
@@ -85,6 +90,11 @@ body {
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.song:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.173);
 }
 
 .song h3 {
