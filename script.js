@@ -140,3 +140,9 @@ audio.addEventListener("ended", function () {
     audio.pause();
   }
 });
+
+const myTimeout = setTimeout(load, 5000);
+var loader = document.querySelector(".loader");
+function load() {
+  loader.style.display = "none";
+}
